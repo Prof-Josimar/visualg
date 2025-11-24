@@ -2,7 +2,7 @@
 chcp 65001 > nul
 title Gerador de README - Projeto VisualG 2025
 
-REM === Configurações ===
+
 set "project_name=VisualG 2025"
 set "author=Josimar Ribeiro"
 set "save_path=%CD%"
@@ -15,11 +15,11 @@ set "filename=README.md"
 REM === Cria o README.md ===
 echo # %project_name% > %filename%
 echo. >> %filename%
-echo ## Informações do sistema >> %filename%
+echo ## InformaÃ§Ãµes do sistema >> %filename%
 echo - Data e hora: %date_time% >> %filename%
-echo - Usuário: %USERNAME% >> %filename%
+echo - UsuÃ¡rio: %USERNAME% >> %filename%
 echo - Computador: %COMPUTERNAME% >> %filename%
-echo - Diretório atual: %CD% >> %filename%
+echo - DiretÃ³rio atual: %CD% >> %filename%
 for /f "tokens=* delims=" %%g in ('git --version') do echo - %%g >> %filename%
 echo. >> %filename%
 
@@ -37,7 +37,7 @@ echo. >> %filename%
 
 REM === Verifica e configura Git ===
 if not exist ".git" (
-    echo Criando repositório Git local...
+    
     git init
 )
 
