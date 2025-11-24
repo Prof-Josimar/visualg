@@ -1,5 +1,5 @@
 
-chcp 65001
+
 @echo off
 title Gerador de README - Projeto Java 2025
 ::color 1F
