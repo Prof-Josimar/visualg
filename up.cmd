@@ -1,43 +1,64 @@
+
+chcp 65001
 @echo off
+title Gerador de README - Projeto Java 2025
+::color 1F
 
+REM === Configurações ===
+set "project_name=VisualG 2025"
+set "author=Josimar Ribeiro"
+set "save_path=%CD%"
+set "date_time=%DATE% %TIME%"
+set "logo_url=https://www.guj.com.br/uploads/default/optimized/3X/9/4/94998aed39aad1c8d4c8dc744412e1148eaefdb0_2_690x387.png"
+set "logo_url2=https://qnax.sh/blog/wp-content/uploads/2024/04/d7b04738-bc60-48a8-bc99-d73a71ba998e-1024x640.webp"
 
-:: Captura informações
-set "HOSTNAME=%COMPUTERNAME%"
-set "DATA=%date%"
-set "HORA=%time:~0,8%"
+set "filename=README.md"
 
-:: Cria o README.md
-(
-echo # ?? Projeto Atualizado **%DATA% %HORA%** ??
-echo.
-echo.
-echo ^<img width="300" src="https://www.guj.com.br/uploads/default/optimized/3X/9/4/94998aed39aad1c8d4c8dc744412e1148eaefdb0_2_690x387.png" alt="Visual G " style="border: 5px solid #333; border-radius: 10px;" /^>
-echo.
-echo ?? Última atualização: **%DATA% %HORA%**
-echo.
-echo Diretório atual: %CD%
-echo.
-echo Hostname da máquina: %HOSTNAME%
-echo.
-echo ---
-echo.
-echo ## ?? Histórico
-echo Este projeto é atualizado automaticamente via script.
-echo.
-echo ?? Commits enviados diretamente para o repositório remoto
-echo ?? Registro de data e hora no README.md
-echo.
-echo ---
-echo.
-echo ????????????
-) > README.md
+REM === Cria o README.md ===
+echo # %project_name% > %filename%
+echo. >> %filename%
+echo ## Informações do sistema >> %filename%
+echo - Data e hora: %date_time% >> %filename%
+echo - Usuário: %USERNAME% >> %filename%
+echo - Computador: %COMPUTERNAME% >> %filename%
+echo - Diretório atual: %CD% >> %filename%
+for /f "tokens=* delims=" %%g in ('git --version') do echo - %%g >> %filename%
+echo. >> %filename%
 
-git init
-git add . -v
-git commit -m "Primeiro Commit"
+echo ^<img src="%logo_url%" width="300"^> >> %filename%
+echo ^<img src="%logo_url2%" width="300"^> >> %filename%
+
+echo. >> %filename%
+echo. >> %filename%
+echo ## Autor >> %filename%
+echo %author% >> %filename%
+echo. >> %filename%
+echo. >> %filename%
+echo. OBS : oupl atalho para out.println(""); >> %filename%
+echo. >> %filename%
+
+REM === Verifica e configura Git ===
+if not exist ".git" (
+    echo Criando repositório Git local...
+    git init
+)
+
 git branch -M main
-git remote add origin git@github.com:Prof-Josimar/visualg.git
+git add . -v
+git commit -m "Updated at %date% %time%"
 git push -u origin main
+
+
+:fim
+
+
+
+
+
+
+
+
+
 
 
 start https://github.com/Prof-Josimar/visualg

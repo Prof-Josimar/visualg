@@ -1,22 +1,19 @@
-# ?? Projeto Atualizado **24/11/2025  9:55:37** ??
-
-
-<img width="300" src="https://www.guj.com.br/uploads/default/optimized/3X/9/4/94998aed39aad1c8d4c8dc744412e1148eaefdb0_2_690x387.png" alt="Visual G " style="border: 5px solid #333; border-radius: 10px;" />
-
-?? Última atualização: **24/11/2025  9:55:37**
-
-Diretório atual: C:\visualg3.0.7
-
-Hostname da máquina: LAPTOP-ACER
-
----
-
-## ?? Histórico
-Este projeto é atualizado automaticamente via script.
-
-?? Commits enviados diretamente para o repositório remoto
-?? Registro de data e hora no README.md
-
----
-
-????????????
+# VisualG 2025 
+ 
+## Informaï¿½ï¿½es do sistema 
+- Data e hora: 24/11/2025  9:58:59,24 
+- Usuï¿½rio: admin 
+- Computador: LAPTOP-ACER 
+- Diretï¿½rio atual: C:\visualg3.0.7 
+- git version 2.52.0.windows.1 
+ 
+<img src="https://www.guj.com.br/uploads/default/optimized/3X/9/4/94998aed39aad1c8d4c8dc744412e1148eaefdb0_2_690x387.png" width="300"> 
+<img src="https://qnax.sh/blog/wp-content/uploads/2024/04/d7b04738-bc60-48a8-bc99-d73a71ba998e-1024x640.webp" width="300"> 
+ 
+ 
+## Autor 
+Josimar Ribeiro 
+ 
+ 
+ OBS : oupl atalho para out.println(""); 
+ 
