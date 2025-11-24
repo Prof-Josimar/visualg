@@ -43,7 +43,7 @@ if not exist ".git" (
 
 git branch -M main
 git add . -v
-git commit -m "Updated at %date% %time%"
+git commit -m "Commit em %date% as %time%"
 git push -u origin main
 
 
