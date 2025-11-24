@@ -1,7 +1,7 @@
 # VisualG 2025 
  
 ## Informações do sistema 
-- Data e hora: 24/11/2025 14:01:20,11 
+- Data e hora: 24/11/2025 14:46:20,51 
 - Usuário: admin 
 - Computador: LAPTOP-ACER 
 - Diretório atual: C:\visualg3.0.7 
