@@ -44,19 +44,8 @@ if not exist ".git" (
 git branch -M main
 git add . -v
 git commit -m "Updated at %date% %time%"
-git push -u origin main
+::git push -u origin main
 
 
 :fim
-
-
-
-
-
-
-
-
-
-
-
-start https://github.com/Prof-Josimar/visualg
+::start https://github.com/Prof-Josimar/visualg
