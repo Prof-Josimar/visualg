@@ -1,8 +1,6 @@
-
-
 @echo off
-title Gerador de README - Projeto Java 2025
-::color 1F
+chcp 65001 > nul
+title Gerador de README - Projeto VisualG 2025
 
 REM === Configurações ===
 set "project_name=VisualG 2025"
@@ -10,7 +8,7 @@ set "author=Josimar Ribeiro"
 set "save_path=%CD%"
 set "date_time=%DATE% %TIME%"
 set "logo_url=https://www.guj.com.br/uploads/default/optimized/3X/9/4/94998aed39aad1c8d4c8dc744412e1148eaefdb0_2_690x387.png"
-set "logo_url2=https://qnax.sh/blog/wp-content/uploads/2024/04/d7b04738-bc60-48a8-bc99-d73a71ba998e-1024x640.webp"
+
 
 set "filename=README.md"
 
