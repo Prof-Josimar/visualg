@@ -6,7 +6,7 @@ Var
    valor : real
    percentagem : real
    operacao : caractere
-      resultado : real
+   resultado : real
 
 funcao FatorAcresDesc(vlr, pct : real; op : caractere) : real
 inicio
@@ -30,6 +30,7 @@ Inicio
    repita
       escreva("Digite a operação (A para acréscimo ou D para desconto): ")
       leia(operacao)
+      operacao := maiusc(operacao)
    ate (operacao = "A") ou (operacao = "D")
 
    // Chamada da função
