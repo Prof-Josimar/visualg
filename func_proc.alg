@@ -30,6 +30,8 @@ fimprocedimento
 
 Inicio
 // Seção de Comandos, procedimento, funções, operadores, etc... 
-
+   MensagemBoasVindas()
+   Linha(50)
+   escreval(ValorPadrao())
 
 Fimalgoritmo
